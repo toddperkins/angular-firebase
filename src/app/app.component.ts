@@ -6,6 +6,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   title = 'angular-firebase';
 
@@ -17,13 +18,11 @@ export class AppComponent implements OnInit {
 
   @ViewChild('btnShow')
   btnShow!: ElementRef;
+
   @ViewChild('btnClose')
   btnClose!: ElementRef;
 
-
-
   constructor(private store: AngularFirestore){
-    
   }
 
   ngOnInit(){
